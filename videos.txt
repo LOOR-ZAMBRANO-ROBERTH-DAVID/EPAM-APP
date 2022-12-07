@@ -1,0 +1,6 @@
+Búsqueda en tiempo real con PHP, MySQL y AJAX
+https://www.youtube.com/watch?v=IP2Ye2KKfoc&t=402s&ab_channel=C%C3%B3digosdeProgramaci%C3%B3n-MR
+
+
+instalacion xampp
+https://www.youtube.com/watch?v=VN4EitfYf0o&t=649s

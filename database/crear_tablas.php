@@ -1,4 +1,0 @@
-<?php
-require 'conection.php';
-
-

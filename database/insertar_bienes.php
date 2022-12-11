@@ -7,6 +7,7 @@ $codigo = $_POST['codigo'];
 $nombre = $_POST['nombre'];
 $categoria = $_POST['categoria'];
 $cantidad = $_POST['cantidad'];
+//crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_bienes(
     codigo VARCHAR(200),

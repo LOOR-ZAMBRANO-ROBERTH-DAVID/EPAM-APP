@@ -10,6 +10,7 @@ $tipo = $_POST['tipo'];
 $costo = $_POST['costo'];
 $cantidad = $_POST['cantidad'];
 $total = $_POST['total'];
+//crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_ingresos(
     analisis VARCHAR(200),

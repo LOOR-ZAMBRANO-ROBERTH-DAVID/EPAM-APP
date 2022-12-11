@@ -8,7 +8,8 @@ $tipo = $_POST['tipo'];
 $cantidad = $_POST['cantidad'];
 $descrip = $_POST['descrip'];
 
-//creamos una variable y en ella metermos la instruccion para ingresar datos
+//crear tablas
+
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_insumos(
     nombre VARCHAR(200),
     tipo VARCHAR(200),

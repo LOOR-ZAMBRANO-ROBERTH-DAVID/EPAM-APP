@@ -8,7 +8,7 @@ $codigo = $_POST['codigo'];
 $costo = $_POST['costo'];
 $descripcion = $_POST['descripcion'];
 
-
+//crear tablas
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_costos_analisis(
     analisis VARCHAR(200),
     codigo VARCHAR(200),

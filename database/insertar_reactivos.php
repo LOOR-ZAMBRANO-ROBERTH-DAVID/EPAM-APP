@@ -22,6 +22,7 @@ $cantidad = $_POST['cantidad'];
 $observaciones = $_POST['observaciones'];
 $responsable = $_POST['responsable'];
 
+//crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_reactivos(
     codigo VARCHAR(200),

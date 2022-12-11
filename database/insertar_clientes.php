@@ -12,6 +12,7 @@ $contacto = $_POST['contacto'];
 $correo = $_POST['correo'];
 $estado = $_POST['estado'];
 
+//crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_clientes(
     razon VARCHAR(200),

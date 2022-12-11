@@ -1,6 +1,6 @@
 <?php
 /**Creamos la conexion a la base de datos */
-$hostname = "localhost";
+$hostname = "localhost:8111";
 $username = "root";
 $password = "";
 
@@ -17,8 +17,9 @@ if (!$connection) {
 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS $database";
+
+
 if ($connection->query($sql) === TRUE) {
-    echo "Database created successfully";
 } else {
     echo "Error creating database: " . $connection->error;
 }
@@ -26,12 +27,4 @@ if ($connection->query($sql) === TRUE) {
 
 $connection = mysqli_connect($hostname, $username, $password, $database);
 
-$create_tables = " tbl_name";
 
-
-$sql = "CREATE TABLE EPAMAPP.jsadfasd (visit_id INT)";
-if ($connection->query($sql) === TRUE) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . $connection->error;
-}

@@ -11,6 +11,20 @@ $costo = $_POST['costo'];
 $cantidad = $_POST['cantidad'];
 $total = $_POST['total'];
 
+$crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_ingresos(
+    analisis VARCHAR(200),
+    encargado VARCHAR(200),
+    fecha DATE,
+    tipo VARCHAR(200),
+    costo VARCHAR(200),
+    cantidad VARCHAR(200),
+    total VARCHAR(200)
+);";
+
+if ($connection->query($crear_tablas) === TRUE) {
+} else {
+    echo "Error creating database: " . $connection->error;
+}
 //creamos una variable y en ella metermos la instruccion para ingresar datos
 $insertar = "INSERT INTO ep_ingresos values ('$analisis', '$encargado', '$fecha', '$tipo', '$costo', '$cantidad', '$total')";
 

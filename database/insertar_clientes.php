@@ -12,6 +12,23 @@ $contacto = $_POST['contacto'];
 $correo = $_POST['correo'];
 $estado = $_POST['estado'];
 
+
+$crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_clientes(
+    razon VARCHAR(200),
+    ruc VARCHAR(200),
+    ciudad VARCHAR(200),
+    telefono VARCHAR(200),
+    direccion VARCHAR(200),
+    contacto VARCHAR(200),
+    correo VARCHAR(200),
+    estado VARCHAR(200)
+);";
+
+if ($connection->query($crear_tablas) === TRUE) {
+} else {
+    echo "Error creating database: " . $connection->error;
+}
+
 //creamos una variable y en ella metermos la instruccion para ingresar datos
 $insertar = "INSERT INTO ep_clientes values ('$razon', '$ruc', '$ciudad', '$telefono', '$direccion', '$contacto', '$correo', '$estado')";
 

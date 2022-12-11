@@ -8,6 +8,19 @@ $nombre = $_POST['nombre'];
 $categoria = $_POST['categoria'];
 $cantidad = $_POST['cantidad'];
 
+$crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_bienes(
+    codigo VARCHAR(200),
+    nombre VARCHAR(200),
+    categoria VARCHAR(200),
+    cantidad Int
+);";
+
+if ($connection->query($crear_tablas) === TRUE) {
+} else {
+    echo "Error creating database: " . $connection->error;
+}
+
+
 //creamos una variable y en ella metermos la instruccion para ingresar datos
 $insertar = "INSERT INTO ep_bienes values ('$codigo', '$nombre', '$categoria', '$cantidad')";
 

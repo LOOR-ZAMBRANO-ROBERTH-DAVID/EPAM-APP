@@ -46,6 +46,10 @@
         <img src="../images/reactivo-icon.png" alt="">
         <a href="../public/reactivos.php">Reactivos</a>
       </li>
+      <li>
+        <img src="../images/necesidades.icon.png" alt="">
+        <a href="../public/necesidades.php">Necesidades</a>
+      </li>
     </ul>
   </div>
 

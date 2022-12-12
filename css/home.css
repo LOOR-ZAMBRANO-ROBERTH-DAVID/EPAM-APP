@@ -1,0 +1,101 @@
+/*Aqui se colocaran etiquetas globales que se veran en muchas pantallas*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #dcdcdc;
+}
+
+.contenedor-global {
+  margin-left: 150px;
+}
+
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+
+td {
+  padding: 2px 5px;
+}
+th {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*El siguiente codigo es perteneciente al index.html*/
+
+.contenedor-global-index {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-titulo {
+  background-color: #343b44;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-titulo img {
+  width: auto;
+  height: 180px;
+}
+.contenedor-entradas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin: 0;
+  height: 65vh;
+}
+
+.contenedor-pantalla {
+  background-color: #ffffff;
+  height: 150px;
+  width: 180px;
+  margin: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.228);
+}
+.contenedor-pantalla:hover {
+  background-color: rgba(0, 0, 0, 0.129);
+}
+
+.elementos-pantalla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.elementos-pantalla img {
+  width: 75px;
+  margin-top: 10px;
+}
+
+.elementos-pantalla h2 {
+  font-family: raleway;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 50;
+  margin: 5px;
+  line-height: 25px;
+}

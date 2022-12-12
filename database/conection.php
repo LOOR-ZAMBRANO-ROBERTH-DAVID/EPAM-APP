@@ -1,6 +1,6 @@
 <?php
 /**Creamos la conexion a la base de datos */
-$hostname = "localhost:8111";
+$hostname = "localhost";
 $username = "root";
 $password = "";
 

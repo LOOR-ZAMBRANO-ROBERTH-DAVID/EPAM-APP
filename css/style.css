@@ -21,6 +21,12 @@ h1 {
   color: black;
   margin: 0;
 }
+h2{
+  margin: 0;
+}
+
+
+
 td {
   padding: 2px 5px;
 }
@@ -268,3 +274,5 @@ textarea::placeholder {
 .texto-dos-lineas {
   white-space: pre-wrap; /* CSS3 */
 }
+
+

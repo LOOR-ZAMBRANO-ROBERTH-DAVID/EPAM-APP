@@ -16,7 +16,11 @@
 
 <body>
   <div class="vertical-menu">
+    <div class="logo-vertical-menu">
+      <a href="../index.php">
+    </div>
     <img src="../images/logo2.png" alt="" class="logo-blanco">
+    </a>
     <ul class="opciones-menu">
       <li>
         <img src="../images/insumoss-icon.png" alt="">

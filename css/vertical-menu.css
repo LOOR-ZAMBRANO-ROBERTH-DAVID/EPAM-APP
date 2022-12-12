@@ -1,6 +1,14 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+.logo-vertical-menu{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+
+}
 .vertical-menu {
   background-color: #343b44;
   width: 150px;

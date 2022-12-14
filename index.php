@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (empty($_SESSION["id"])) {
+  header('location: public/login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +19,9 @@
 <body>
   <div class="contenedor-global-index">
     <div class="contenedor-titulo">
+    <div class="cerrar-sesion">
+        <a href="controllers/controlador_cerrar_sesion.php">Cerrar sesion</a>
+      </div>
       <img src="../EPAM-APP/images/logo-blanco.png" alt="" />
     </div>
     <div class="contenedor-entradas">
@@ -72,16 +81,6 @@
           </div>
         </a>
       </div>
-
-
-
-
-
-
-
-
-
-
 
     </div>
   </div>

@@ -186,14 +186,11 @@ select {
   background-color: #dfdfdf;
   margin-left: 20px;
   margin-bottom: 15px;
+  text-indent: 10px;
 }
 
 textarea {
   width: 809px;
-}
-input::placeholder,
-textarea::placeholder {
-  padding-left: 20px;
 }
 
 textarea {

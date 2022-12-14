@@ -54,3 +54,42 @@ ul {
   padding: 0;
 }
 
+
+/*USUARIO QUE APARECE EN LA ESQUINA SUPERIOR IZQUIERDA*/
+
+.usuario-sesion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.usuario-sesion img{
+  width: 40px;
+}
+.texto-usuario-sesion{
+  margin-left: 5px;
+  color: white;
+}
+
+p[class="apellido-usuario"]{
+  font-weight: 700;
+}
+
+/*Cerrar sesion*/
+
+.cerrar-sesion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+  margin-right: 20px;
+
+}
+.cerrar-sesion img{
+  width: 30px;
+}
+.cerrar-sesion p{
+  margin-left: 5px;
+}

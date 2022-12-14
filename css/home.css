@@ -4,10 +4,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-
 }
-
-
 
 p {
   margin: 0;
@@ -40,7 +37,6 @@ a {
 .contenedor-global-index {
   display: flex;
   flex-direction: column;
-
 }
 
 .contenedor-titulo {
@@ -50,6 +46,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .contenedor-titulo img {
@@ -58,7 +55,7 @@ a {
 }
 .contenedor-entradas {
   display: flex;
- 
+  padding: 0 100px 0 100px;
   justify-content: center;
   flex-wrap: wrap;
   background-color: #ffffff;
@@ -98,3 +95,19 @@ a {
   margin: 5px;
   line-height: 25px;
 }
+
+.cerrar-sesion{
+  width: 200px;
+  margin-left: 70%;
+  margin-top: 10px;
+  z-index: auto;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;  
+
+}
+
+.cerrar-sesion a{
+  color: white;
+}
+

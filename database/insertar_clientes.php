@@ -32,7 +32,7 @@ if ($connection->query($crear_tablas) === TRUE) {
 }
 
 //creamos una variable y en ella metermos la instruccion para ingresar datos
-$insertar = "INSERT INTO ep_clientes values ('$razon', '$ruc', '$ciudad', '$telefono', '$direccion', '$contacto', '$correo', '$estado')";
+$insertar = "INSERT INTO ep_clientes (razon, ruc,ciudad,telefono,direccion,contacto,correo,estado)  values ('$razon', '$ruc', '$ciudad', '$telefono', '$direccion', '$contacto', '$correo', '$estado')";
 
 //ingresmaos datos
 $query = mysqli_query($connection, $insertar);

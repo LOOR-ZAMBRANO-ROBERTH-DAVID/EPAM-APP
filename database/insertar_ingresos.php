@@ -13,6 +13,7 @@ $total = $_POST['total'];
 //crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_ingresos(
+    id_ingresos INT PRIMARY KEY AUTO_INCREMENT,
     analisis VARCHAR(200),
     encargado VARCHAR(200),
     fecha DATE,
@@ -27,7 +28,7 @@ if ($connection->query($crear_tablas) === TRUE) {
     echo "Error creating database: " . $connection->error;
 }
 //creamos una variable y en ella metermos la instruccion para ingresar datos
-$insertar = "INSERT INTO ep_ingresos values ('$analisis', '$encargado', '$fecha', '$tipo', '$costo', '$cantidad', '$total')";
+$insertar = "INSERT INTO ep_ingresos (analisis,encargado,fecha,tipo,costo,cantidad,total) values ('$analisis', '$encargado', '$fecha', '$tipo', '$costo', '$cantidad', '$total')";
 
 //ingresmaos datos
 $query = mysqli_query($connection, $insertar);

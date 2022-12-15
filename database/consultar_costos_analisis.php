@@ -3,6 +3,7 @@ require 'conection.php';
 
 //columnas de la tabla de la base de datos
 $columns = [
+    'id_canalisis',
     'analisis',
     'codigo',
     'costo',
@@ -39,7 +40,7 @@ if ($num_rows > 0) {
         $html .= '<td>' . $row['codigo'] . '</td>';
         $html .= '<td>' . $row['costo'] . '</td>';
         $html .= '<td>' . $row['descripcion'] . '</td>';
-        $html .= '<td>  <a class="centrar-boton" href=""><div class="boton-tabla boton boton-editar"> <img src="../images/editar-icon.png" alt="" class="icono-boton-tabla "> <p>Editar</p></div></a> </td>';
+        $html .= '<td>  <a class="centrar-boton" href="../editar_datos/editar_costos_analisis.php?id_canalisis=' . $row['id_canalisis'] . '"><div class="boton-tabla boton boton-editar"> <img src="../images/editar-icon.png" alt="" class="icono-boton-tabla "> <p>Editar</p></div></a> </td>';
         $html .= '<td>  <a class="centrar-boton" href=""><div class="boton-tabla boton boton-eliminar"> <img src="../images/eliminar-icon.png" alt="" class="icono-boton-tabla"> <p>Eliminar</p></div></a> </td>';
          $html .= '</tr>';
     }

@@ -67,7 +67,7 @@
           </tr>
         </thead>
         <tbody id="content">
-          <script src="../js/consultar_bienes.js"></script>
+          <script src="../js/consultar_costos_analisis.js"></script>
         </tbody>
       </table>
     </section>

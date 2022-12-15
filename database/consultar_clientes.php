@@ -3,6 +3,7 @@ require 'conection.php';
 
 //columnas de la tabla de la base de datos
 $columns = [
+    'id_cliente',
     'razon',
     'ruc',
     'ciudad',

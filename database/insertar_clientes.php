@@ -15,6 +15,7 @@ $estado = $_POST['estado'];
 //crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_clientes(
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     razon VARCHAR(200),
     ruc VARCHAR(200),
     ciudad VARCHAR(200),

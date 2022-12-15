@@ -10,6 +10,7 @@ $cantidad = $_POST['cantidad'];
 //crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_bienes(
+  id_bienes INT PRIMARY KEY AUTO_INCREMENT,
     codigo VARCHAR(200),
     nombre VARCHAR(200),
     categoria VARCHAR(200),
@@ -23,7 +24,7 @@ if ($connection->query($crear_tablas) === TRUE) {
 
 
 //creamos una variable y en ella metermos la instruccion para ingresar datos
-$insertar = "INSERT INTO ep_bienes values ('$codigo', '$nombre', '$categoria', '$cantidad')";
+$insertar = "INSERT INTO ep_bienes (codigo, nombre, categoria, cantidad) values ('$codigo', '$nombre', '$categoria', '$cantidad')";
 
 //ingresmaos datos
 $query = mysqli_query($connection, $insertar);

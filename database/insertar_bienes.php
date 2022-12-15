@@ -10,6 +10,7 @@ $cantidad = $_POST['cantidad'];
 //crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_bienes(
+    id VARCHAR(30)
     codigo VARCHAR(200),
     nombre VARCHAR(200),
     categoria VARCHAR(200),

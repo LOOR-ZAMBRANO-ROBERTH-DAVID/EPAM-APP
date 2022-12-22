@@ -42,15 +42,22 @@
         </div>
         <div class="titulo-formulario">
           <h1>Formulario de Necesidad</h1>
-        </div>
+          </div>
         <form action="../database/insertar_necesidades.php" method="POST" class="formulario">
-          <input type="text" name="quien_solicita" id="quien_solicita" placeholder="¿Quien solicita?" />
+          <input type="text" name="quien_solicita" id="quien_solicita" placeholder="¿Quien solicita?"
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+        
 
-          <input type="text" name="que_solicita" id="que_solicita" placeholder="¿Que solicita?" />
+          <input type="text" name="que_solicita" id="que_solicita" placeholder="¿Que solicita?" 
+          pattern="[a-zA-Z]{1,12}" maxlength="12" required/> 
 
-          <input type="text" name="fecha_solicitud" id="fecha_solicitud" placeholder="Fecha de Solicitud" />
+          <input type="date" name="fecha_solicitud" id="fecha_solicitud" placeholder="Fecha de Solicitud" 
+          pattern= ([0-9]{2,})([/])([0-9]{2,})([/])([0-9]{4,}) required/>
 
-          <input type="text" name="area_trabajo" id="area_trabajo" placeholder="Area de Trabajo" />
+          <input type="text" name="area_trabajo" id="area_trabajo" placeholder="Area de Trabajo" 
+          pattern="[a-zA-Z]{1,12}" maxlength="12" required />
+
+
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

@@ -46,13 +46,20 @@
                     <h1>Ingresar un nuevo cliente</h1>
                 </div>
                 <form action="../database/insertar_clientes.php" method="POST" class="formulario">
-                    <input type="text" name="razon" placeholder="Razon social">
-                    <input type="text" name="ruc" placeholder="R.U.C.">
-                    <input type="text" name="ciudad" placeholder="Ciudad">
-                    <input type="text" name="telefono" placeholder="Telefono">
-                    <input type="text" name="direccion" placeholder="Dirección">
-                    <input type="text" name="contacto" placeholder="Contacto">
-                    <input type="text" name="correo" placeholder="Correo del contacto">
+                    <input type="text" name="razon" placeholder="Razon social"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required>
+                    <input type="text" name="ruc" placeholder="R.U.C."
+                    pattern="[0-9]{1,13}" maxlength="13" required>
+                    <input type="text" name="ciudad" placeholder="Ciudad"
+                    pattern="[a-zA-Z]{1,12}" maxlength="12" required>
+                    <input type="text" name="telefono" placeholder="Telefono"
+                    pattern="[0-9]{1,10}" maxlength="10" required>
+                    <input type="text" name="direccion" placeholder="Dirección"
+                    pattern="[a-zA-Z]{1,12}" maxlength="12" required>
+                    <input type="text" name="contacto" placeholder="Contacto"
+                    pattern=[a-zA-ZÀ-ÿ\s0-9]{1,20}$ maxlength= "20"  required>
+                    <input type="text" name="correo" placeholder="Correo del contacto"
+                    pattern=[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5} maxlength= "20"  required>
                     <select name="estado" id="">
                         <option value="Activo">Activo</option>
                         <option value="Inactivo">Inactivo</option>

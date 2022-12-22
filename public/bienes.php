@@ -58,13 +58,17 @@
           <h1>Ingresar un nuevo bien</h1>
         </div>
         <form action="../database/insertar_bienes.php" method="POST" class="formulario">
-          <input type="text" name="codigo" id="codigo" placeholder="Codigo" />
+          <input type="text" name="codigo" id="codigo" placeholder="Codigo" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
 
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre del objeto" />
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre del objeto" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
 
-          <input type="text" name="categoria" id="categoria" placeholder="Categoria" />
+          <input type="text" name="categoria" id="categoria" placeholder="Categoria" 
+          pattern=[a-zA-ZÀ-ÿ\s0-9]{1,20}$ maxlength= "20"  required/>
 
-          <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" />
+          <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

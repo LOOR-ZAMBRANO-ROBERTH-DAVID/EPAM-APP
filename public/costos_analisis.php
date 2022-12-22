@@ -40,13 +40,17 @@
           <h1>Ingresar un nuevo análisis de costo</h1>
         </div>
         <form action="../database/insertar_costos_analisis.php" method="POST" class="formulario">
-          <input type="text" name="analisis" id="analisis" placeholder="Analisis" />
+          <input type="text" name="analisis" id="analisis" placeholder="Analisis" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
 
-          <input type="text" name="codigo" id="codigo" placeholder="Codigo" />
+          <input type="text" name="codigo" id="codigo" placeholder="Codigo" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
 
-          <input type="number" name="costo" id="costo" placeholder="Costo" />
+          <input type="number" name="costo" id="costo" placeholder="Costo" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
 
-          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" />
+          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción"
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

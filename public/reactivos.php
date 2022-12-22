@@ -45,31 +45,49 @@
                     <h1>Ingresar un nuevo reactivo</h1>
                 </div>
                 <form action="../database/insertar_reactivos.php" method="POST" class="formulario">
-                    <input type="text" name="codigo" id="codigo" placeholder="Código" />
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
-                    <input type="text" name="fabricante" id="fabricante" placeholder="Fabricante" />
-                    <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" />
-                    <input type="text" name="incertidumbre" id="incertidumbre" placeholder="Incertidumbre" />
-                    <input type="text" name="ncat" id="ncat" placeholder="N° CAT" />
-                    <input type="text" name="ncas" id="ncas" placeholder="N° CAS" />
-                    <input type="text" name="lote" id="lote" placeholder="Lote" />
+                    <input type="text" name="codigo" id="codigo" placeholder="Código" 
+                    pattern="[0-9]{1,12}" maxlength="12" required/>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required />
+                    <input type="text" name="fabricante" id="fabricante" placeholder="Fabricante" 
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion" 
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required/>
+                    <input type="text" name="incertidumbre" id="incertidumbre" placeholder="Incertidumbre"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required />
+                    <input type="text" name="ncat" id="ncat" placeholder="N° CAT" 
+                    pattern="[0-9]{1,12}" maxlength="12" required />
+                    <input type="text" name="ncas" id="ncas" placeholder="N° CAS" 
+                    pattern="[0-9]{1,12}" maxlength="12" required/>
+                    <input type="text" name="lote" id="lote" placeholder="Lote"
+                    pattern="[0-9]{1,12}" maxlength="12" required />
                     <input type="text" name="presentacion_detalle" id="presentacion_detalle"
-                        placeholder="Presentacion" />
+                        placeholder="Presentacion" 
+                        pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required/>
                     <select name="presentacion" id="">
                         <option value="paquete">Paquete</option>
                         <option value="volumen">Volumen</option>
                         <option value="peso">Peso</option>
                     </select>
 
-                    <input type="date" name="fingreso" id="fingreso" placeholder="Fecha de Ingreso" />
-                    <input type="date" name="felaboracion" id="felaboracion" placeholder="Fecha de Elaboracion" />
-                    <input type="date" name="fcaducidad" id="fcaducidad" placeholder="Fecha de Caducidad" />
-                    <input type="text" name="marca" id="marca" placeholder="Marca" />
-                    <input type="text" name="proveedor" id="proveedor" placeholder="Proveedor" />
-                    <input type="text" name="certificado" id="certificado" placeholder="Certificado" />
-                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" />
-                    <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones" />
-                    <input type="text" name="responsable" id="responsable" placeholder="Responsable" />
+                    <input type="date" name="fingreso" id="fingreso" placeholder="Fecha de Ingreso" 
+                    pattern= ([0-9]{2,})([/])([0-9]{2,})([/])([0-9]{4,}) required />
+                    <input type="date" name="felaboracion" id="felaboracion" placeholder="Fecha de Elaboracion"
+                    pattern= ([0-9]{2,})([/])([0-9]{2,})([/])([0-9]{4,}) required  />
+                    <input type="date" name="fcaducidad" id="fcaducidad" placeholder="Fecha de Caducidad"
+                    pattern= ([0-9]{2,})([/])([0-9]{2,})([/])([0-9]{4,}) required  />
+                    <input type="text" name="marca" id="marca" placeholder="Marca" 
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required />
+                    <input type="text" name="proveedor" id="proveedor" placeholder="Proveedor" 
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required />
+                    <input type="text" name="certificado" id="certificado" placeholder="Certificado"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required />
+                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad"
+                    pattern="[0-9]{1,12}" maxlength="12" required />
+                    <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required />
+                    <input type="text" name="responsable" id="responsable" placeholder="Responsable"
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,50}$ maxlength= "50"  required  />
                     <br>
                     <input type="submit" value="Guardar" class="boton boton-guardar" />
                 </form>

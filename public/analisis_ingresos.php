@@ -42,13 +42,20 @@
           <h1>Ingresar análisis de ingresos</h1>
         </div>
         <form action="../database/insertar_ingresos.php" method="POST" class="formulario">
-          <input type="text" name="analisis" id="analisis" placeholder="Analisis" />
-          <input type="text" name="encargado" id="encargado" placeholder="Encargado" />
-          <input type="date" name="fecha" id="fecha" placeholder="Fecha" />
-          <input type="text" name="tipo" id="tipo" placeholder="Tipo" />
-          <input type="text" name="costo" id="costo" placeholder="Costo" />
-          <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" />
-          <input type="text" name="total" id="total" placeholder="Total" />
+          <input type="text" name="analisis" id="analisis" placeholder="Analisis" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+          <input type="text" name="encargado" id="encargado" placeholder="Encargado" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+          <input type="date" name="fecha" id="fecha" placeholder="Fecha"
+          pattern= ([0-9]{2,})([/])([0-9]{2,})([/])([0-9]{4,}) required />
+          <input type="text" name="tipo" id="tipo" placeholder="Tipo" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+          <input type="text" name="costo" id="costo" placeholder="Costo" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
+          <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad"
+          pattern="[0-9]{1,12}" maxlength="12" required />
+          <input type="text" name="total" id="total" placeholder="Total" 
+          pattern="[0-9]{1,12}" maxlength="12" required/>
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

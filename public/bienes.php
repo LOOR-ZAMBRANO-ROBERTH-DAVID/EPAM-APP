@@ -70,8 +70,6 @@
         </form>
       </div>
     </section>
-
-
     <section class="contenedor-tabla">
       <h1 class="titulo-tabla">Listado de los bienes</h1>
       <table>
@@ -90,29 +88,7 @@
         </tbody>
       </table>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
-
 </body>
 
 </html>

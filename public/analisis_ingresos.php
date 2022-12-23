@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,8 +11,6 @@
   <?php
   require '../elements/navbar.php';
   ?>
-
-
   <div class="contenedor-global">
     <div class="contenedor-buscador">
       <form action="" method="post" class="contenedor-contenido">
@@ -30,7 +27,6 @@
   </div>
 
   <div class="contenedor-global">
-
     <section class="ingreso-insumos">
       <div class="contenedor-formulario contenedor-tabla">
         <div class="boton-salir">

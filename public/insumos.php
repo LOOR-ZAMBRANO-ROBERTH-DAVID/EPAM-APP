@@ -61,6 +61,7 @@
           <textarea name="descrip" id="" cols="20" rows="5" placeholder="Descripción"
           pattern=[a-zA-ZÀ0-9]{1,50}$ maxlength= "50"  required></textarea>
           <br>
+
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>
       </div>

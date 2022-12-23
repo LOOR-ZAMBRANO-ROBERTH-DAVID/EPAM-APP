@@ -29,6 +29,7 @@ h2{
 
 td {
   padding: 2px 5px;
+  font-size: 15px;
 }
 th {
   text-align: center;
@@ -47,7 +48,7 @@ th {
   justify-content: end;
 }
 .boton-salir img {
-  width: 35px;
+  width: 30px;
   margin: 10px 10px 0 0;
 }
 
@@ -57,7 +58,8 @@ th {
   height: 40px;
   color: white;
   font-weight: 600;
-  margin-top: 20px;
+
+  
 }
 .boton-guardar:hover {
   cursor: pointer;
@@ -74,6 +76,12 @@ th {
   margin-top: 40px;
   font-weight: 600;
 }
+.boton {
+  padding: 8px 13px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+}
 
 table {
   width: 100%;
@@ -83,14 +91,10 @@ table {
   margin-bottom: 40px;
   border-collapse: collapse;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 5px;
 }
-thead {
-  border-radius: 10px;
-}
 th {
-  padding: 0;
   padding: 20px 0 20px 0;
 }
 
@@ -98,24 +102,17 @@ th {
   margin-left: 30px;
 }
 .primera-columna {
-  border-top-left-radius: 10px;
+  border-top-left-radius: 5px;
 }
 .ultima-columna {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 5px;
 }
 
 .tabla-encabezado {
   background-color: #343b44;
   margin: 0;
   color: white;
-  border-radius: 10px;
-}
-
-.boton {
-  padding: 8px 13px;
-  margin-right: 10px;
-  border: none;
-  border-radius: 4px;
+  font-size: 15px;
 }
 
 .boton-tabla {
@@ -167,8 +164,14 @@ th {
   width: 100%;
 }
 .formulario {
-  padding: 20px 100px 20px 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 10px 10px;
 }
+
+
 
 .contenedor-formulario {
   background-color: white;
@@ -178,19 +181,19 @@ th {
 input,
 textarea,
 select {
+  flex-basis: 30%;
   height: 35px;
   border-radius: 4px;
   border: none;
-  width: 250px;
   outline: none;
   background-color: #dfdfdf;
   margin-left: 20px;
   margin-bottom: 15px;
   text-indent: 10px;
 }
+select, input[type="date"]{
+  flex-basis: 30.3%;
 
-textarea {
-  width: 809px;
 }
 
 textarea {
@@ -209,6 +212,9 @@ textarea {
   width: 90px;
   border-radius: 4px;
 }
+
+
+
 .contenedor-boton-agregar:hover {
   background-color: #349cd4;
 }
@@ -225,9 +231,6 @@ textarea {
   margin-top: 20px;
 }
 
-.formulario {
-  padding: 20px 100px 20px 100px;
-}
 
 .input-insumos {
   width: 100%;

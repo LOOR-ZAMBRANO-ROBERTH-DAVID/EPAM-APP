@@ -21,11 +21,9 @@ h1 {
   color: black;
   margin: 0;
 }
-h2{
+h2 {
   margin: 0;
 }
-
-
 
 td {
   padding: 2px 5px;
@@ -58,8 +56,6 @@ th {
   height: 40px;
   color: white;
   font-weight: 600;
-
-  
 }
 .boton-guardar:hover {
   cursor: pointer;
@@ -171,8 +167,6 @@ th {
   padding: 10px 10px;
 }
 
-
-
 .contenedor-formulario {
   background-color: white;
   border-radius: 5px;
@@ -191,9 +185,9 @@ select {
   margin-bottom: 15px;
   text-indent: 10px;
 }
-select, input[type="date"]{
+select,
+input[type="date"] {
   flex-basis: 30.3%;
-
 }
 
 textarea {
@@ -213,8 +207,6 @@ textarea {
   border-radius: 4px;
 }
 
-
-
 .contenedor-boton-agregar:hover {
   background-color: #349cd4;
 }
@@ -230,7 +222,6 @@ textarea {
 .ingreso-insumos {
   margin-top: 20px;
 }
-
 
 .input-insumos {
   width: 100%;
@@ -274,5 +265,3 @@ textarea::placeholder {
 .texto-dos-lineas {
   white-space: pre-wrap; /* CSS3 */
 }
-
-

@@ -45,7 +45,7 @@
                 </div>
                 <form action="../database/insertar_clientes.php" method="POST" class="formulario">
                     <input type="text" name="razon" placeholder="Razon social"
-                    pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required>
+                    pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "100"  required>
                     <input type="text" name="ruc" placeholder="R.U.C."
                     pattern="[0-9]{1,13}" maxlength="13" required>
                     <input type="text" name="ciudad" placeholder="Ciudad"

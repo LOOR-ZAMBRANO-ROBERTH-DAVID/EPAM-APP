@@ -15,10 +15,20 @@ if ($connection->query($sql) === TRUE) {
     echo "Error al crear la tabla: " . $connection->error;
 }
 
-$clave = 'roberth';
+//AQUI USTEDES VAN A LLENAR ESTOS DATOS, LOS MISMOS QUE SERAN IMPORTANTES PARA INICIAR SESION
+
+$rol = 'Ingeniero';
+$nombre = 'David';
+$apellido = 'Zambrano';
+$usuario = 'david';
+$clave = 'david';
+
+
 $clave_encriptada = password_hash($clave, PASSWORD_DEFAULT);
 
-$sql2 = "INSERT INTO ep_usuarios (rol, nombre, apellido, usuario, clave) VALUES ('Doctor', 'Roberth', 'Loor', 'roberth', '$clave_encriptada');";
+$sql2 = "INSERT INTO ep_usuarios (rol, nombre, apellido, usuario, clave)
+         SELECT '$rol', '$nombre', '$apellido', '$usuario', '$clave_encriptada'
+         WHERE NOT EXISTS (SELECT * FROM ep_usuarios WHERE usuario = '$usuario')";
 
 // Ejecutar la consulta y verificar si fue exitosa
 if (mysqli_query($connection, $sql2)) {

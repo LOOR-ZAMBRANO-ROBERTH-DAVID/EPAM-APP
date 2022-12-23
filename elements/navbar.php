@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (empty($_SESSION["id"])) {
-  header('location: ../public/login.php');
+if (empty($_SESSION["id_usuario"])) {
+  header('location: public/login.php');
 }
 ?>
 <!DOCTYPE html>

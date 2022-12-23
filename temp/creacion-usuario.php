@@ -6,7 +6,7 @@ $sql = "CREATE TABLE IF NOT EXISTS $database.ep_usuarios (
         nombre VARCHAR(50) NOT NULL,
         apellido VARCHAR(50) NOT NULL,
         usuario VARCHAR(50) NOT NULL,
-        clave VARCHAR(50) NOT NULL
+        clave VARCHAR(100) NOT NULL
     )";
 
 if ($connection->query($sql) === TRUE) {
@@ -18,11 +18,7 @@ if ($connection->query($sql) === TRUE) {
 $clave = 'roberth';
 $clave_encriptada = password_hash($clave, PASSWORD_DEFAULT);
 
-$sql2 = "INSERT INTO $database.ep_usuarios (rol, nombre, apellido, usuario, clave) VALUES ('Doctor', 'Roberth', 'Loor', 'roberth', '$clave_encriptada');";
-
-
-
-
+$sql2 = "INSERT INTO ep_usuarios (rol, nombre, apellido, usuario, clave) VALUES ('Doctor', 'Roberth', 'Loor', 'roberth', '$clave_encriptada');";
 
 // Ejecutar la consulta y verificar si fue exitosa
 if (mysqli_query($connection, $sql2)) {

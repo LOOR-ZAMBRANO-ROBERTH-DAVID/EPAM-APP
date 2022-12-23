@@ -15,6 +15,7 @@ $estado = $_POST['estado'];
 //crear tablas
 
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_clientes(
+    id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     razon VARCHAR(200),
     ruc VARCHAR(200),
     ciudad VARCHAR(200),
@@ -31,7 +32,7 @@ if ($connection->query($crear_tablas) === TRUE) {
 }
 
 //creamos una variable y en ella metermos la instruccion para ingresar datos
-$insertar = "INSERT INTO ep_clientes values ('$razon', '$ruc', '$ciudad', '$telefono', '$direccion', '$contacto', '$correo', '$estado')";
+$insertar = "INSERT INTO ep_clientes (razon, ruc,ciudad,telefono,direccion,contacto,correo,estado)  values ('$razon', '$ruc', '$ciudad', '$telefono', '$direccion', '$contacto', '$correo', '$estado')";
 
 //ingresmaos datos
 $query = mysqli_query($connection, $insertar);

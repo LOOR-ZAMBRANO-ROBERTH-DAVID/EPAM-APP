@@ -52,10 +52,14 @@
           <h1>Ingresar un nuevo Insumo</h1>
         </div>
         <form action="../database/insertar_insumos.php" method="POST" class="formulario">
-          <input type="text" name="nombre" placeholder="Nombre del insumo" />
-          <input type="text" name="tipo" id="" placeholder="Tipo del insumo" />
-          <input type="number" name="cantidad" id="" placeholder="Cantidad" />
-          <textarea name="descrip" id="" cols="20" rows="5" placeholder="Descripción"></textarea>
+          <input type="text" name="nombre" placeholder="Nombre del insumo" 
+          pattern=[a-zA-ZÀ-ÿ\s]{1,30}$ maxlength= "30"  required/>
+          <input type="text" name="tipo" id="" placeholder="Tipo del insumo" 
+          pattern=[a-zA-ZÀ-ÿ\s0-9]{1,20}$ maxlength= "20"  required/>
+          <input type="number" name="cantidad" id="" placeholder="Cantidad" 
+          pattern="[0-9]{1,12}" maxlength="12" required />
+          <textarea name="descrip" id="" cols="20" rows="5" placeholder="Descripción"
+          pattern=[a-zA-ZÀ0-9]{1,50}$ maxlength= "50"  required></textarea>
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

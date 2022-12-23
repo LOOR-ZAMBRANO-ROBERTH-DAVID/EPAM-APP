@@ -8,8 +8,10 @@ $codigo = $_POST['codigo'];
 $costo = $_POST['costo'];
 $descripcion = $_POST['descripcion'];
 
+//hola
 //crear tablas
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_costos_analisis(
+    id_canalisis INT PRIMARY KEY AUTO_INCREMENT,
     analisis VARCHAR(200),
     codigo VARCHAR(200),
     costo VARCHAR(200),
@@ -22,7 +24,7 @@ if ($connection->query($crear_tablas) === TRUE) {
 }
 
 //creamos una variable y en ella metermos la instruccion para ingresar datos
-$insertar = "INSERT INTO ep_costos_analisis values ('$analisis', '$codigo', '$costo', '$descripcion')";
+$insertar = "INSERT INTO ep_costos_analisis (analisis,codigo,costo,descripcion) values ('$analisis', '$codigo', '$costo', '$descripcion')";
 
 //ingresmaos datos
 $query = mysqli_query($connection, $insertar);

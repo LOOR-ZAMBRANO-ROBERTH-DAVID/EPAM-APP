@@ -25,62 +25,93 @@ if (empty($_SESSION["id_usuario"])) {
       <img src="../EPAM-APP/images/logo-blanco.png" alt="" />
     </div>
     <div class="contenedor-entradas">
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/insumos.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/insumoss-icon.png" alt="icono-insumos" />
-            <h2>Insumos</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/clientes.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/clientes-icon.png" alt="icono-insumos" />
-            <h2>Clientes</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/bienes.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/bienes-icon.png" alt="icono-insumos" />
-            <h2>Bienes</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/analisis_ingresos.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/ingresoss-icon.png" alt="icono-insumos" />
-            <h2>Ingresos</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/costos_analisis.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/costoss-icon.png" alt="icono-insumos" />
-            <h2>Costos de análisis</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/reactivos.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/reactivo-icon.png" alt="icono-insumos" />
-            <h2>Reactivos</h2>
-          </div>
-        </a>
-      </div>
-      <div class="contenedor-pantalla">
-        <a href="../EPAM-APP/public/necesidades.php">
-          <div class="elementos-pantalla">
-            <img src="../EPAM-APP/images/necesidades.icon.png" alt="icono-insumos" />
-            <h2>Necesidades</h2>
-          </div>
-        </a>
-      </div>
+
+      <?php
+
+
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/insumos.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/insumoss-icon.png" alt="icono-insumos" />';
+        echo '<h2>Insumos</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/clientes.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/clientes-icon.png" alt="icono-insumos" />';
+        echo '<h2>Clientes</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/bienes.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/bienes-icon.png" alt="icono-insumos" />';
+        echo '   <h2>Bienes</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/analisis_ingresos.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/ingresoss-icon.png" alt="icono-insumos" />';
+        echo ' <h2>Ingresos</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/costos_analisis.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/costoss-icon.png" alt="icono-insumos" />';
+        echo '<h2>Costo de análisis</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/reactivos.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/reactivo-icon.png" alt="icono-insumos" />';
+        echo '<h2>Reactivos</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+      }
+      if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+
+        echo '<div class="contenedor-pantalla">';
+        echo '<a href="../EPAM-APP/public/necesidades.php">';
+        echo '<div class="elementos-pantalla">';
+        echo '<img src="../EPAM-APP/images/necesidades.icon.png" alt="icono-insumos" />';
+        echo '<h2>Necesidades</h2>';
+        echo '</div>';
+        echo '</a>';
+        echo '</div>';
+
+      }
+
+
+      ?>
 
     </div>
   </div>

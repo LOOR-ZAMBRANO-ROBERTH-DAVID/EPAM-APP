@@ -30,36 +30,68 @@ if (empty($_SESSION["id_usuario"])) {
         </div>
       </div>
     </div>
-    <ul class="opciones-menu">
-      <li>
-        <img src="../images/insumoss-icon.png" alt="" />
-        <a href="../public/insumos.php">Insumos</a>
-      </li>
-      <li>
-        <img src="../images/clientes-icon.png" alt="" />
-        <a href="../public/clientes.php">Clientes</a>
-      </li>
-      <li>
-        <img src="../images/bienes-icon.png" alt="" />
-        <a href="../public/bienes.php">Bienes</a>
-      </li>
-      <li>
-        <img src="../images/ingresoss-icon.png" alt="" />
-        <a href="../public/analisis_ingresos.php">Ingresos</a>
-      </li>
-      <li>
-        <img src="../images/costoss-icon.png" alt="" />
-        <a href="../public/costos_analisis.php">Costo de Análisis</a>
-      </li>
-      <li>
-        <img src="../images/reactivo-icon.png" alt="" />
-        <a href="../public/reactivos.php">Reactivos</a>
-      </li>
-      <li>
-        <img src="../images/necesidades.icon.png" alt="" />
-        <a href="../public/necesidades.php">Necesidades</a>
-      </li>
-    </ul>
+    
+
+    <?php
+    echo '<ul class="opciones-menu">';
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/insumos.php" class="item-nabvar">';
+      echo '<img src="../images/insumoss-icon.png" alt="" />';
+      echo '<p>Insumos</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/clientes.php" class="item-nabvar">';
+      echo '<img src="../images/clientes-icon.png" alt="" />';
+      echo '<p>Clientes</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/bienes.php" class="item-nabvar">';
+      echo '<img src="../images/bienes-icon.png" alt="" />';
+      echo '<p>Bienes</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/analisis_ingresos.php" class="item-nabvar">';
+      echo '<img src="../images/ingresoss-icon.png" alt="" />';
+      echo '<p>Ingresos</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/costos_analisis.php" class="item-nabvar">';
+      echo '<img src="../images/costoss-icon.png" alt="" />';
+      echo '<p>Costo de Analisis</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/reactivos.php" class="item-nabvar">';
+      echo '<img src="../images/reactivo-icon.png" alt="" />';
+      echo '<p>Reactivos</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
+      echo '<li>';
+      echo '<a href="../public/necesidades.php" class="item-nabvar">';
+      echo '<img src="../images/necesidades.icon.png" alt="" />';
+      echo '<p>Necesidades</p>';
+      echo '</a>';
+      echo '</li>';
+    }
+    echo '</ul>'
+      ?>
     <a href="../controllers/controlador_cerrar_sesion.php">
 
       <div class="cerrar-sesion">
@@ -68,7 +100,7 @@ if (empty($_SESSION["id_usuario"])) {
       </div>
     </a>
   </div>
-
+  
   </div>
 </body>
 

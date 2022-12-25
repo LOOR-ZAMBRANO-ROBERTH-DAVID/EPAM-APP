@@ -96,6 +96,7 @@ th {
 
 .contenedor-contenido {
   margin-left: 30px;
+  margin-top: 10px;
 }
 .primera-columna {
   border-top-left-radius: 5px;
@@ -110,8 +111,12 @@ th {
   color: white;
   font-size: 15px;
 }
+a{
+  text-decoration: none;
+}
 
 .boton-tabla {
+  color: white;
   display: flex;
   align-items: baseline;
   justify-content: space-between;

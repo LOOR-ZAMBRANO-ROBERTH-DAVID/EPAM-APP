@@ -1,13 +1,12 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
-.logo-vertical-menu{
+.logo-vertical-menu {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 10px;
-
 }
 .vertical-menu {
   background-color: #343b44;
@@ -18,14 +17,8 @@ html {
   align-items: center;
   flex-direction: column;
   position: fixed;
+}
 
-}
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  padding-left: 10px;
-}
 .logo-blanco {
   width: 100px;
   padding-top: 20px;
@@ -36,60 +29,83 @@ a {
   flex-direction: column;
 }
 
-li {
+ul {
   display: flex;
   align-items: center;
-  padding: 20px 0 20px 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+li {
+  width: 170px;
+  padding-left: 10px;
+}
+
+
 li:hover {
   background-color: #464d57;
 }
 
 li img {
   width: 20px;
+  height: 20px;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+.contenido-nabvar {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
+.item-nabvar {
+
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px ;
+}
+.item-nabvar p{
+  margin-left: 10px;
+}
+
 
 
 /*USUARIO QUE APARECE EN LA ESQUINA SUPERIOR IZQUIERDA*/
 
-.usuario-sesion{
+.usuario-sesion {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
   margin-left: 20px;
 }
-.usuario-sesion img{
+.usuario-sesion img {
   width: 40px;
 }
-.texto-usuario-sesion{
+.texto-usuario-sesion {
   margin-left: 5px;
   color: white;
 }
 
-p[class="apellido-usuario"]{
+p[class="apellido-usuario"] {
   font-weight: 700;
 }
 
 /*Cerrar sesion*/
 
-.cerrar-sesion{
+.cerrar-sesion {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   margin-top: 30px;
   margin-right: 20px;
-
 }
-.cerrar-sesion img{
+.cerrar-sesion img {
   width: 30px;
 }
-.cerrar-sesion p{
+.cerrar-sesion p {
   margin-left: 5px;
 }

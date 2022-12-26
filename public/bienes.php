@@ -47,7 +47,7 @@
 
 
   <div class="contenedor-global">
-    <section class="ingreso-insumos">
+    <section class="ingreso-datos">
       <div class="contenedor-formulario contenedor-tabla">
         <div class="boton-salir">
           <a href="">

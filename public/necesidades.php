@@ -33,7 +33,7 @@
   </div>
 
   <div class="contenedor-global">
-    <section class="ingreso necesidades">
+    <section class="ingreso datos">
       <div class="contenedor-formulario contenedor-tabla">
         <div class="boton-salir">
           <a href="">

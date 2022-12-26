@@ -111,7 +111,7 @@ th {
   color: white;
   font-size: 15px;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -224,8 +224,11 @@ textarea {
   font-size: 15px;
 }
 
-.ingreso-insumos {
-  margin-top: 20px;
+.ingreso-datos {
+  display: none;
+}
+.ingreso-datos-visible{
+  display: block;
 }
 
 .input-insumos {

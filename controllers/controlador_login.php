@@ -30,3 +30,6 @@ if (!empty($_POST['btn_ingresar'])) {
         echo ' <div class = "alerta">Campos vacios </div>';
     }
 }
+
+
+

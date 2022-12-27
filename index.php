@@ -28,8 +28,6 @@ if (empty($_SESSION["id_usuario"])) {
     <div class="contenedor-entradas">
 
       <?php
-
-
       if (in_array($_SESSION['rol'], array('Ingeniero', 'Doctor'))) {
 
         echo '<div class="contenedor-pantalla">';

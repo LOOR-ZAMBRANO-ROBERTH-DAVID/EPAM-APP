@@ -27,12 +27,12 @@ $responsable = $_POST['responsable'];
 $crear_tablas = "CREATE TABLE IF NOT EXISTS  $database.ep_reactivos(
     codigo VARCHAR(200),
     nombre VARCHAR(200),
-    fecha DATE,
     fabricante VARCHAR(200),
     descripcion VARCHAR(200),
     incertidumbre VARCHAR(200),
     ncat VARCHAR(200),
     ncas VARCHAR(200),
+    lote VARCHAR(200),
     presentacion_detalle VARCHAR(200),
     presentacion VARCHAR(200),
     fingreso date,

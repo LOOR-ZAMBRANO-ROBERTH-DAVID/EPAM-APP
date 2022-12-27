@@ -3,36 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="icon" href="../images/icon-page.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../js/jquery-3.6.1.min.js"></script>
   <title>Analisis de ingresos</title>
 </head>
 
 <body>
-  <?php
-  require '../elements/navbar.php';
+<?php
+  
+  require '../elements/navbar.php'; //agregamos navbar
+  require '../elements/barra-buscador-agregar.php'; //agregamos div de busqueda y agregar datos
   ?>
-  <div class="contenedor-global">
-    <div class="contenedor-buscador">
-      <form action="" method="post" class="contenedor-contenido">
-        <input type="text" name="campo" id="campo" class="input-insumos" placeholder="Buscar" />
-      </form>
 
-      <a href="">
-        <div class="contenedor-boton-agregar">
-          <img src="../images/agregar-icon.png" alt="">
-          <p>Agregar</p>
-        </div>
-      </a>
-    </div>
-  </div>
 
   <div class="contenedor-global">
-    <section class="ingreso-datos">
+    <section class="ingreso-datos" id="id-ingreso-datos">
       <div class="contenedor-formulario contenedor-tabla">
-        <div class="boton-salir">
-          <a href="">
+        <div class="boton-salir" id="id_contenedor-boton-agregar">
             <img src="../images/salir-icon.png" alt="">
-          </a>
         </div>
         <div class="titulo-formulario">
           <h1>Ingresar análisis de ingresos</h1>
@@ -59,7 +49,7 @@
     </section>
 
     <section class="contenedor-tabla">
-      <h1 class="titulo-tabla">Listado de los bienes</h1>
+      <h1 class="titulo-tabla">Listado de los Ingresos</h1>
       <table>
         <thead>
           <tr class="tabla-encabezado">

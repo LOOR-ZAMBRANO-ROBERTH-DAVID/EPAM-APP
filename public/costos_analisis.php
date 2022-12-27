@@ -5,52 +5,38 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/icon-page.ico">
+  <script src="../js/jquery-3.6.1.min.js"></script>
+
   <title>Costos por análisis</title>
 </head>
 
 <body>
   <?php
-  require '../elements/navbar.php';
+  require '../elements/navbar.php'; //agregamos navbar
+  require '../elements/barra-buscador-agregar.php'; //agregamos div de busqueda y agregar datos
   ?>
 
-  <div class="contenedor-global">
-    <div class="contenedor-buscador">
-      <form action="" method="post" class="contenedor-contenido">
-        <input type="text" name="campo" id="campo" class="input-insumos" placeholder="Buscar" />
-      </form>
-
-      <a href="">
-        <div class="contenedor-boton-agregar">
-          <img src="../images/agregar-icon.png" alt="">
-          <p>Agregar</p>
-        </div>
-      </a>
-    </div>
-  </div>
 
   <div class="contenedor-global">
-    <section class="ingreso-datos">
+    <section class="ingreso-datos" id="id-ingreso-datos">
+
       <div class="contenedor-formulario contenedor-tabla">
-        <div class="boton-salir">
-          <a href="">
-            <img src="../images/salir-icon.png" alt="">
-          </a>
+        <div class="boton-salir" id="id_contenedor-boton-agregar">
+          <img src="../images/salir-icon.png" alt="">
+
         </div>
         <div class="titulo-formulario">
           <h1>Ingresar un nuevo análisis de costo</h1>
         </div>
         <form action="../database/insertar_costos_analisis.php" method="POST" class="formulario">
-          <input type="text" name="analisis" id="analisis" placeholder="Analisis" 
-          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+          <input type="text" name="analisis" id="analisis" placeholder="Analisis" pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength="20" required />
 
-          <input type="text" name="codigo" id="codigo" placeholder="Codigo" 
-          pattern="[0-9]{1,12}" maxlength="12" required/>
+          <input type="text" name="codigo" id="codigo" placeholder="Codigo" pattern="[0-9]{1,12}" maxlength="12" required />
 
-          <input type="number" name="costo" id="costo" placeholder="Costo" 
-          pattern="[0-9]{1,12}" maxlength="12" required/>
+          <input type="number" name="costo" id="costo" placeholder="Costo" pattern="[0-9]{1,12}" maxlength="12" required />
 
-          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción"
-          pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength= "20"  required/>
+          <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" pattern=[a-zA-ZÀ-ÿ\s]{1,20}$ maxlength="20" required />
           <br>
           <input type="submit" value="Guardar" class="boton boton-guardar" />
         </form>

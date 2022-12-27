@@ -44,11 +44,13 @@ th {
 .boton-salir {
   display: flex;
   justify-content: end;
+  cursor: pointer;
 }
 .boton-salir img {
   width: 30px;
   margin: 10px 10px 0 0;
 }
+
 
 .boton-guardar {
   background-color: #349cd4;
@@ -210,10 +212,13 @@ textarea {
   height: 25px;
   width: 90px;
   border-radius: 4px;
+  user-select: none;
+
 }
 
 .contenedor-boton-agregar:hover {
   background-color: #349cd4;
+  cursor: pointer;
 }
 
 .contenedor-boton-agregar img {
@@ -225,10 +230,8 @@ textarea {
 }
 
 .ingreso-datos {
+
   display: none;
-}
-.ingreso-datos-visible{
-  display: block;
 }
 
 .input-insumos {

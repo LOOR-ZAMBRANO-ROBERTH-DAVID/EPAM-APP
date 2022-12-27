@@ -11,6 +11,7 @@ if (empty($_SESSION["id_usuario"])) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/icon-page.ico">
   <link rel="stylesheet" href="../EPAM-APP/css/normalize.css" />
   <link rel="stylesheet" href="../EPAM-APP/css/home.css?v=<?php echo (rand()); ?>" />
   <title>Home</title>
@@ -107,9 +108,7 @@ if (empty($_SESSION["id_usuario"])) {
         echo '</div>';
         echo '</a>';
         echo '</div>';
-
       }
-
 
       ?>
 
